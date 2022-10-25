@@ -22,7 +22,7 @@ def get_right():
     text = "Calibration Right: Look at the Dot and Click Enter"
     textDot = "."
     cv2.putText(new_frame, text, (90, 60), cv2.FONT_HERSHEY_DUPLEX, 1.6, (147, 58, 31), 2)
-    cv2.putText(new_frame, textDot, (2250 + calibration_const, 1250), cv2.FONT_HERSHEY_DUPLEX, 1.6, (147, 58, 31), 2)
+    cv2.putText(new_frame, textDot, (2250 + calibration_const, 1250), cv2.FONT_HERSHEY_DUPLEX, 10.6, (255, 255, 255), 2)
     if cv2.waitKey(1) == 13:
         gaze.set_self_right()
 
@@ -30,7 +30,7 @@ def get_left():
     text = "Calibration Left: Look at the Dot and Click Enter"
     textDot = "."
     cv2.putText(new_frame, text, (90, 60), cv2.FONT_HERSHEY_DUPLEX, 1.6, (147, 58, 31), 2)
-    cv2.putText(new_frame, textDot, (2250 - calibration_const, 1250), cv2.FONT_HERSHEY_DUPLEX, 1.6, (147, 58, 31), 2)
+    cv2.putText(new_frame, textDot, (2250 - calibration_const, 1250), cv2.FONT_HERSHEY_DUPLEX, 10.6, (255, 255, 255), 2)
     if cv2.waitKey(1) == 13:
         gaze.set_self_left()
 
@@ -38,7 +38,7 @@ def get_up():
     text = "Calibration Up: Look at the Dot and Click Enter"
     textDot = "."
     cv2.putText(new_frame, text, (90, 60), cv2.FONT_HERSHEY_DUPLEX, 1.6, (147, 58, 31), 2)
-    cv2.putText(new_frame, textDot, (2250, 1250 - calibration_const), cv2.FONT_HERSHEY_DUPLEX, 1.6, (147, 58, 31), 2)
+    cv2.putText(new_frame, textDot, (2250, 1250 - calibration_const), cv2.FONT_HERSHEY_DUPLEX, 10.6, (255, 255, 255), 2)
     if cv2.waitKey(1) == 13:
         gaze.set_self_up()
 
@@ -46,7 +46,7 @@ def get_down():
     text = "Calibration Down: Look at the Dot and Click Enter"
     textDot = "."
     cv2.putText(new_frame, text, (90, 60), cv2.FONT_HERSHEY_DUPLEX, 1.6, (147, 58, 31), 2)
-    cv2.putText(new_frame, textDot, (2250, 1250 + calibration_const), cv2.FONT_HERSHEY_DUPLEX, 1.6, (147, 58, 31), 2)
+    cv2.putText(new_frame, textDot, (2250, 1250 + calibration_const), cv2.FONT_HERSHEY_DUPLEX, 10.6, (255, 255, 255), 2)
     if cv2.waitKey(1) == 13:
         gaze.set_self_down()
 
